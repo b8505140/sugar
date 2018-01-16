@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  background-color: #808782;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('font/SG05.ttf');
+}
+
+.titles {
+  text-align: center;
+  font-size: 3em;
+  font-family: myFirstFont;
+}
+
+.container-fluid {
+  min-width: 605px;
+}
+
+
+/* --- navbar start --- */
+
+.navbar {
+  background-color: #041528 ;
+  margin: 0px 50px;
+}
+
+.navbar-brand {
+  background-color: #041528;
+  height: 32px;
+  width: 160px;
+  margin-left: 2rem ;
+  margin-right: 2rem ;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  z-index: 2 ;
+  bottom: 0;
+  border-width: 0 0 1px;
+}
+
+.nav-link {
+  font-family: myFirstFont;
+}
+
+/* 漢堡選單微調部分 WB */
+
+.button-margin {
+  margin: 22px 16px 26px;
+  padding: 0;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  display: inline-block;
+}
+
+.burger-bar {
+  background-color: #979797;
+  display: block;
+  width: 16px;
+  height: 3px;
+  margin: 0 auto 3px;
+}
+
+.burger-bottom {
+  margin: 0 auto 0;
+}
+
+/* 漢堡選單微調部分 WB */
+
+/* 漢堡選單 WB */
+.navbar-toggler span {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.navbar-toggler span:nth-child(1) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler span:nth-child(2) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler span:nth-child(3) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler.open span:nth-child(1) {
+  -webkit-transform: translate(0, 6px) rotate(45deg);
+          transform: translate(0, 6px) rotate(45deg);
+}
+
+.navbar-toggler.open span:nth-child(2) {
+  width: 0;
+  opacity: 0%;
+}
+
+.navbar-toggler.open span:nth-child(3) {
+  -webkit-transform: translate(0, -6px) rotate(-45deg);
+          transform: translate(0, -6px) rotate(-45deg);
+}
+/* 漢堡選單 */
+
+/* NAV1.2 */
+
+.nav-link {
+  font-size: 20px !important;
+  padding: 17px 19px !important;
+  color: #fff !important;
+}
+.nav-link a:hover{
+  color: black;
+}
+
+.nav-item:hover {
+  background-color: #3dc343;
+
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+@media (max-width: 1045px) {
+  #carouselExampleIndicators {
+    display: none;
+  }
+  .container-fluid {
+    width: 100vw;
+  }
+  .Infor--pagph {
+    text-overflow:ellipsis;
+    word-break:keep-all;
+    text-align: center;
+    font-size:1em;
+    font-family: Microsoft JhengHei;
+    line-height: 2.0em;
+    color: white;
+  }
+}
+
+/*  NAV1.2 */
+
+/* last part card */
+.Transcard p {
+  text-align: center;
+  font-size: 3em;
+}
+
+.Transcard , .Introductor{
+  /* margin: 0px 50px; */
+  padding: 16px 100px;
+  background-color: #F0F2F5;
+  height: auto;
+  margin: 0 -15px;
+}
+
+.outline {
+  box-sizing: border-box;
+  max-width: 400px;
+  min-width: 350px;
+  height: 250px;
+  margin: 20px auto 10px;
+  perspective: 2000px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  transition: transform 1s ease-out;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor:pointer;
+  box-shadow: 16px 16px 25px -5px grey;
+  border: 2px solid #1A281F;
+
+}
+
+.card div {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.card .cardA {
+  overflow: hidden;
+  transform: rotateY(180deg);
+}
+
+.card .cardB {
+  background-image: url("photo/CardB.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pg1 {
+  background-image: url("photo/people1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pg2 {
+  background-image: url("photo/people2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pg3 {
+  background-image: url("photo/people3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.outline:hover .card{
+  transform: rotateY(180deg);
+}
+/* END last part card */
+
+/* MajorPic */
+.MajorPic {
+  height: 500px;
+  margin: 0px -15px;
+  overflow: hidden;
+  /* background-image: url("photo/Mainpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+/* End MajorPic */
+
+/* WELCOME */
+.Welcome {
+  height: 600px;
+  margin: 0px -15px;
+  /* line-height: 8.0em; */
+}
+
+.customized_title {
+  color: white;
+  font-size: 5em;
+}
+
+.jumbotron{
+   background: url('photo/parallax.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size:cover;
+   background-position: center;
+}
+
+@media screen and (min-width: ) {
+
+
+}
+/* End WELCOME */
+
+/* INTRODUCTOR */
+.Introductor{
+  padding: 16px 120px;
+  /* margin: 0px 50px; */
+  background-color: #f8f9fa;
+  height: auto;
+}
+
+.customized_outline {
+  height: 400px;
+}
+/* End INTRODUCTOR */
+
+/* Information */
+.Information {
+  padding:16px 16px;
+  background-color: #000000;
+  height: 600px;
+  margin: 0px -15px;
+  color: #18783C;
+}
+
+.Infor--title {
+  line-height: 100px;
+}
+
+.Infor--pagph {
+  text-overflow:ellipsis;
+  word-break:keep-all;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Microsoft JhengHei;
+  line-height: 3.0em;
+  color: white;
+}
+
+.Infor--A {
+  text-overflow:ellipsis;
+  word-break:keep-all;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: myFirstFont;
+  line-height: 3.0em;
+  color: white;
+}
+
+/* End Information */
+
+/* Locaation */
+.Location {
+  margin: 0px 50px;
+}
+
+.Address {
+  text-align: right;
+}
+/* End Locaation */
+
+/*Footer*/
+footer{
+  height: 75px;
+  background-color: #041528;
+  margin: 0 -15px -15px;
+}
+
+footer p {
+  float: right;
+  margin-bottom: -15px;
+  margin-right: 25px;
+  line-height: 50px;
+  color: white;
+  font-family: myFirstFont;
+}
+/*End Footer*/
